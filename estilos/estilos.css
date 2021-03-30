@@ -1,7 +1,15 @@
+body {
+    background: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
 .topo {
     background: #CF2B2B;
     width: 100%;
     height: 92px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .topo h1 {
@@ -13,9 +21,135 @@
 }
 
 .topo p {
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #FFFFFF;
     margin-left: 21px;
     padding-top: 5px;
+}
+
+.conteudo p:first-child {
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    margin-left: 21px;
+    margin-top: 123px;
+}
+
+.conteudo p {
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    margin-left: 21px;
+    margin-top: 27px;
+}
+
+.lista-pratos, .lista-bebidas, .lista-sobremesas {    
+    width: 100%;
+    height: 230px;     
+    margin-top: 18px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;   
+    overflow: scroll;
+    display: flex; 
+    justify-content: space-between;     
+}
+
+.pratos {
+    width: 172px;
+    height: 216px;
+    background: #FFFFFF;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;    
+    border-radius: 9px;   
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
+    margin: 0 15px;
+}
+
+.itens {
+    width: 172px;
+    height: 216px;
+    background: #FFFFFF;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 15px;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 70px;
+    border-radius: 9px;   
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.20);
+    margin: 0 15px;
+}
+
+.pratos, .itens p {
+    color:#A6A6A6;
+    font-size: 15px;    
+}
+
+li > span {
+    font-weight: bold;
+    font-size:16px;  
+    color: #333333;
+    margin: 8px 0; 
+    width: 144px; 
+}
+
+.info span {
+    font-size:16px; 
+    color: black;        
+}
+
+.info .descrição {
+    color: #A6A6A6; 
+    font-size: 15px;
+}
+
+img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px; 
+         
+}
+
+.lista-sobremesas {
+    margin-bottom: 100px;
+}
+
+ul .pratos:last-child {
+    margin-right: 15px;
+} 
+
+.base {
+    background: #FFFFFF;
+    height: 92px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;    
+    display: flex;
+    justify-content: center;    
+}
+
+button {
+    font-family: 'Roboto';
+    background: #CBCBCB;
+    width: 364px;
+    height: 61px;
+    margin: 18px;  
+    font-size: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
