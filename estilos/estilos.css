@@ -143,10 +143,10 @@ button {
     background: #CBCBCB;
     width: 364px;
     height: 61px;
-    margin: 18px;  
+    margin-top: 18px;  
     font-size: 20px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 75px; 
+    padding-right: 75px;   
     color: #FFFFFF;
     border: none;
     border-radius: 50px;
@@ -157,7 +157,15 @@ button {
 }
 
 .lista-pratos .pratos:nth-child(3) {
-    margin-right: 50px;
+    margin-right: 20px;
+}
+
+.lista-bebidas .itens:nth-child(3) {
+    margin-right: 20px;
+}
+
+.lista-sobremesas .itens:nth-child(3) {
+    margin-right: 20px;
 }
 
 .confirmar {
