@@ -22,93 +22,102 @@
         <div class="conteudo">
             <p>Primeiro, seu prato</p>
             <ul class="lista-pratos">                
-                <li class="pratos">
+                <li class="pratos" onclick="selecionarPrato1()">
                     <img src="imagens/strogonoff.jpg" alt="strogonoff">
                     <span>Strogonoff de frango</span>
                     <div class="info">
                         <span class="descrição">Clássico, dispensa comentários</span></br></br>
                         <span>R$ 15,90</span>
+                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="pratos">
+                <li class="pratos" onclick="selecionarPrato2()">
                     <img src="imagens/yinyang.png">
                     <span>Frango Yin Yang</span>
                     <div class="info">
                         <span class="descrição">Um pouco de batata, um pouco de salada</span></br></br></br>
                         <span>R$ 14,90</span>
+                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="pratos">
+                <li class="pratos" onclick="selecionarPrato3()">
                     <img src="imagens/lasanha.jpg">
                     <span>Lasanha à bolonhesa</span>
                     <div class="info">
                         <span class="descrição">Massa e molho caseiros</span></br></br>
                         <span>R$ 19,90</span>
+                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>                
             </ul>
 
             <p>Agora, sua coca</p>            
             <ul class ="lista-bebidas">
-                <li class="itens">
+                <li class="itens" onclick="selecionar()">
                     <img src="imagens/coca.jpg">
                     <span>Pouquíssima coca</span>
                     <div class="info">
                         <span class="descrição">Lata 350ml, acaba em dois goles</span></br></br>
                         <span>R$ 4,90</span>
+                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="itens">
+                <li class="itens" onclick="selecionar()">
                     <img src="imagens/coca2.jpg">
                     <span>Pouca coca</span>
                     <div class="info">
                         <span class="descrição">600ml, acaba antes do prato</span></br></br>
                         <span>R$ 8,90</span>
+                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="itens">
+                <li class="itens" onclick="selecionar(); iconConfirmado()">
                     <img src="imagens/coca3.jpg">
                     <span>Coca suficiente</span>
                     <div class="info">
                         <span class="descrição">2l, essa dá e ainda sobra um chorinho</span></br></br>
                         <span>R$ 11,90</span>
+                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>                
             </ul>
                         
             <p>Por fim, sua sobremesa</p>
             <ul class ="lista-sobremesas">
-                <li class="pratos">
+                <li class="pratos" onclick="selecionar()">
                     <img src="imagens/pudim.jpg">
                     <span>Pudim</span>
                     <div class="info">
                         <span class="descrição">Apenas um delicioso pudim</span></br></br>
                         <span>R$ 7,90</span>
+                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="pratos">
+                <li class="pratos" onclick="selecionar()">
                     <img src="imagens/torta.jpg">
                     <span>Torta de limão</span>
                     <div class="info">
                         <span class="descrição">Uma fatia generosa o suficiente pra não enjoar</span></br></br>
                         <span>R$ 4,90</span>
+                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="pratos">
+                <li class="pratos" onclick="selecionar()">
                     <img src="imagens/bolo.jpg">
                     <span>Bolo de laranja</span>
                     <div class="info">
                         <span class="descrição">Melhor que o da Vó Alzira</span></br></br>
                         <span>R$ 10,90</span>
+                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>                
             </ul>
             <div class="base">
-                <button>Selecione os 3 itens para fechar o pedido</button>            
+                <button class = "selecionar-pedido">Selecione os 3 itens para fechar o pedido</button>            
             </div>            
         </div>        
 
-        <div class="confirmar">
+        <div class="confirmar escondido">
             <h1>Confirme seu pedido</h1>   
             <div class="pedido">
                 <div class="itens-pedido">
@@ -126,6 +135,8 @@
             </div>
             <button class="confirmar-pedido"><span>Tudo certo, pode pedir!</span></button>
             <button class="cancelar-pedido">Cancelar</button>
-        </div>   
+      </div>   
+      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+      <script src="scripts.js"></script>
     </body>
 </html>
