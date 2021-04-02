@@ -22,7 +22,7 @@
         <div class="conteudo">
             <p>Primeiro, seu prato</p>
             <ul class="lista-pratos">                
-                <li class="pratos" onclick="selecionarPrato1()">
+                <li class="pratos prato1" onclick="selecionarPrato('prato1', 'Strogonoff')">
                     <img src="imagens/strogonoff.jpg" alt="strogonoff">
                     <span>Strogonoff de frango</span>
                     <div class="info">
@@ -31,7 +31,7 @@
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="pratos" onclick="selecionarPrato2()">
+                <li class="pratos prato2" onclick="selecionarPrato('prato2', 'Frango Yin Yang')">
                     <img src="imagens/yinyang.png">
                     <span>Frango Yin Yang</span>
                     <div class="info">
@@ -40,7 +40,7 @@
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="pratos" onclick="selecionarPrato3()">
+                <li class="pratos prato3" onclick="selecionarPrato('prato3', 'Lasanha')">
                     <img src="imagens/lasanha.jpg">
                     <span>Lasanha à bolonhesa</span>
                     <div class="info">
@@ -53,7 +53,7 @@
 
             <p>Agora, sua coca</p>            
             <ul class ="lista-bebidas">
-                <li class="itens" onclick="selecionar()">
+                <li class="itens item1" onclick="selecionarBebida('item1', 'Pouquíssima Coca')">
                     <img src="imagens/coca.jpg">
                     <span>Pouquíssima coca</span>
                     <div class="info">
@@ -62,7 +62,7 @@
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="itens" onclick="selecionar()">
+                <li class="itens item2" onclick="selecionarBebida('item2', 'Pouca coca')">
                     <img src="imagens/coca2.jpg">
                     <span>Pouca coca</span>
                     <div class="info">
@@ -71,7 +71,7 @@
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="itens" onclick="selecionar(); iconConfirmado()">
+                <li class="itens item3" onclick="selecionarBebida('item3', 'Coca suficiente')">
                     <img src="imagens/coca3.jpg">
                     <span>Coca suficiente</span>
                     <div class="info">
@@ -84,7 +84,7 @@
                         
             <p>Por fim, sua sobremesa</p>
             <ul class ="lista-sobremesas">
-                <li class="pratos" onclick="selecionar()">
+                <li class="pratos sobremesa1" onclick="selecionarSobremesa('sobremesa1', 'Pudim')">
                     <img src="imagens/pudim.jpg">
                     <span>Pudim</span>
                     <div class="info">
@@ -93,7 +93,7 @@
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="pratos" onclick="selecionar()">
+                <li class="pratos sobremesa2" onclick="selecionarSobremesa('sobremesa2', 'Torta de limão')">
                     <img src="imagens/torta.jpg">
                     <span>Torta de limão</span>
                     <div class="info">
@@ -102,7 +102,7 @@
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="pratos" onclick="selecionar()">
+                <li class="pratos sobremesa3" onclick="selecionarSobremesa('sobremesa3', 'Bolo de laranja')">
                     <img src="imagens/bolo.jpg">
                     <span>Bolo de laranja</span>
                     <div class="info">
