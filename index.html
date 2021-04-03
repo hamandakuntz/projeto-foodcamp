@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FoodCamp</title>
+    <link rel="icon" type="image/jpg" href="imagens/fc.png">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
         <div class="conteudo">
             <p>Primeiro, seu prato</p>
             <ul class="lista-pratos">                
-                <li class="pratos prato1" onclick="selecionarPrato('prato1', 'Strogonoff')">
+                <li class="pratos prato1" onclick="selecionarPrato('prato1', 'Strogonoff de frango')">
                     <img src="imagens/strogonoff.jpg" alt="strogonoff">
                     <span>Strogonoff de frango</span>
                     <div class="info">
@@ -40,7 +41,7 @@
                         <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
                     </div>
                 </li>
-                <li class="pratos prato3" onclick="selecionarPrato('prato3', 'Lasanha')">
+                <li class="pratos prato3" onclick="selecionarPrato('prato3', 'Lasanha à bolonhesa')">
                     <img src="imagens/lasanha.jpg">
                     <span>Lasanha à bolonhesa</span>
                     <div class="info">
@@ -53,7 +54,7 @@
 
             <p>Agora, sua coca</p>            
             <ul class ="lista-bebidas">
-                <li class="itens item1" onclick="selecionarBebida('item1', 'Pouquíssima Coca')">
+                <li class="itens item1" onclick="selecionarBebida('item1', 'Pouquíssima coca')">
                     <img src="imagens/coca.jpg">
                     <span>Pouquíssima coca</span>
                     <div class="info">
@@ -113,30 +114,34 @@
                 </li>                
             </ul>
             <div class="base">
-                <button class = "selecionar-pedido">Selecione os 3 itens para fechar o pedido</button>            
+                <button class = "selecionar-pedido botao1" onclick="fecharPedido()" disabled>Selecione os 3 itens para fechar o pedido</button>                            
             </div>            
-        </div>        
+        </div> 
 
-        <div class="confirmar escondido">
+    <div class="fundo escondido">  
+        <div class="confirmar">
             <h1>Confirme seu pedido</h1>   
             <div class="pedido">
                 <div class="itens-pedido">
-                    <span>Frango Yin Yang</span>
-                    <span>Coquinha gelada</span>
-                    <span>Pudim</span>
+                    <span class="prato-escolhido estilo">Frango Yin Yang</span>
+                    <span class="bebida-escolhida estilo">Coquinha gelada</span>
+                    <span class="sobremesa-escolhida estilo">Pudim</span>
                     <span><strong>TOTAL</strong></span>
                 </div>
                 <div class="valores">
-                    <span>14,90</span> 
-                    <span>4,90</span> 
-                    <span>7,90</span> 
-                    <span><strong>R$ 27,90</strong></span>    
+                    <span class="preco-prato estilo">14,90</span> 
+                    <span class="preco-bebida estilo">4,90</span> 
+                    <span class="preco-sobremesa estilo">7,90</span> 
+                    <span class="total"><strong>R$ 27,90</strong></span>    
                 </div>             
             </div>
-            <button class="confirmar-pedido"><span>Tudo certo, pode pedir!</span></button>
-            <button class="cancelar-pedido">Cancelar</button>
-      </div>   
-      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+            <button class="confirmar-pedido" onclick="confirmarPedidoFinal()"><span>Tudo certo, pode pedir!</span></button>            
+            <button class="cancelar-pedido" onclick="cancelarPedido()">Cancelar</button>
+      </div>  
+    </div> 
+      
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
       <script src="scripts.js"></script>
     </body>
 </html>
